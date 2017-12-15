@@ -349,15 +349,15 @@ Java Basics
     
 63.a. **When is the finalize() method called in Java?**
 
-In general it's best not to rely on finalize() to do any cleaning up etc.
+    In general it's best not to rely on finalize() to do any cleaning up etc.
 
-According to the Javadoc (which it would be worth reading), it is:
+    According to the Javadoc (which it would be worth reading), it is:
 
-Called by the garbage collector on an object when garbage collection determines that there are no more references to the object.
+    Called by the garbage collector on an object when garbage collection determines that there are no more references to the object.
 
-As Joachim pointed out, this may never happen in the life of a program if the object is always accessible.
+    As Joachim pointed out, this may never happen in the life of a program if the object is always accessible.
 
-Also, the garbage collector is not guaranteed to run at any specific time. In general, what I'm trying to say is finalize() is probably not the best method to use in general unless there's something specific you need it for.
+    Also, the garbage collector is not guaranteed to run at any specific time. In general, what I'm trying to say is finalize() is  probably not the best method to use in general unless there's something specific you need it for.
 
 64. **What is UNICODE?**
 
