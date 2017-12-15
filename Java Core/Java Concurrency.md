@@ -112,10 +112,13 @@ A thread can be in only one state at a given point in time. These states are vir
 
 10. java.util.concurrent.*, what utils do you know?
 
-    Synchronization primitives: Semaphore, CyclicBarrier, CountDownLatch, Lock, ReentrantLock
-    Threads: Executors, Callable and Future
-    Data: Synchronized collections (CopyOnWriteArrayList, ConcurrentHashMap, BlockingQueue)
-    See [JAVA DOCS UTIL](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/package-summary.html)
+    * Synchronization primitives: 
+        * Semaphore - A Semaphore is a thread synchronization construct that can be used either to send signals between threads to avoid missed signals, or to guard a critical section like you would with a lock. Java 5 comes with semaphore implementations in the java.util.concurrent package so you don't have to implement your own semaphores. Still, it can be useful to know the theory behind their implementation and use.
+        * CyclicBarrier - A synchronization aid that allows a set of threads to all wait for each other to reach a common barrier point. CyclicBarriers are useful in programs involving a fixed sized party of threads that must occasionally wait for each other. The barrier is called cyclic because it can be re-used after the waiting threads are released. 
+        * CountDownLatch, Lock, ReentrantLock
+    * Threads: Executors, Callable and Future
+    * Data: Synchronized collections (CopyOnWriteArrayList, ConcurrentHashMap, BlockingQueue)
+    * See [JAVA DOCS UTIL](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/package-summary.html)
 
 11. ThreadLocal, what for are they needed? Does child thread see the value of parent ThreadLocal?
 
