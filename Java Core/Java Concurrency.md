@@ -52,9 +52,9 @@ A thread can be in only one state at a given point in time. These states are vir
     See below. The main difference between run() and start() is that the latter creates a separate thread while the former executes the code synchronously
 
 6. Describe different ways to create a thread.
-
+ ```
     a)
-        ```
+       
         class MyRunnable extends SomeOtherClass implements Runnable {
             public void run(){
                 // code that has to run in a thread
@@ -65,10 +65,10 @@ A thread can be in only one state at a given point in time. These states are vir
         Thread t = new Thread(r);
         r.start();
         ```
-
+ ```
     b)
     
-      ```
+     
       class MyThread extends Thread {
             public void run(){
                 // code that has to run in a thread
@@ -78,10 +78,10 @@ A thread can be in only one state at a given point in time. These states are vir
         Thread t = new MyThred();
         t.start(); 
         ```
-    
+ ```   
     c) 
    
-        ```
+        
         class MySomething extends Something {
             public void doSomeStuff() {...}
         }
