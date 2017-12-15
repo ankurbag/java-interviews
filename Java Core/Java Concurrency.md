@@ -64,7 +64,8 @@ A thread can be in only one state at a given point in time. These states are vir
         MyRunnable r = new MyRunnable();
         Thread t = new Thread(r);
         r.start();
-
+ ```
+ ```
     b)
     
      
@@ -76,7 +77,8 @@ A thread can be in only one state at a given point in time. These states are vir
 
         Thread t = new MyThred();
         t.start(); 
-
+ ```
+ ```
     c) 
    
         
